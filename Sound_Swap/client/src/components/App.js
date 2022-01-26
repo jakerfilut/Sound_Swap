@@ -7,7 +7,7 @@ import Search from "../pages/Search";
 
 function App() {
   const [user, setUser] = useState(null);
-
+//test
   useEffect(() => {
     // auto-login
     fetch("/me").then((r) => {
