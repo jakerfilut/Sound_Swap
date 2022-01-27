@@ -12114,3 +12114,2447 @@ Did you mean?  song
   
 app/controllers/songs_controller.rb:27:in `song_params'
 app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:19:45 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.48ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.6ms | Allocations: 30812)
+
+
+Started GET "/playlists" for ::1 at 2022-01-27 12:20:06 -0700
+Processing by PlaylistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.2ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.15ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.5ms | Allocations: 3331)
+
+
+Started GET "/users" for ::1 at 2022-01-27 12:20:24 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1456)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:21:13 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 684)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:21:13 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.12ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.6ms | Allocations: 30816)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:21:13 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 686)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:21:14 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.18ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.8ms | Allocations: 30819)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:21:14 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 682)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:21:15 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.42ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.6ms | Allocations: 30814)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:21:15 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 680)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:21:15 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.25ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.5ms | Allocations: 30812)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:21:16 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 678)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:21:16 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.33ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.5ms | Allocations: 30810)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (2.4ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "users";
+DELETE FROM "playlists"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "It's a Battlefield"], ["artist", "Marilyn Manson"], ["duration", "45.41"], ["image", "https://robohash.org/voluptatemautemomnis.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:21:27.882561"], ["updated_at", "2022-01-27 19:21:27.882561"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "The Daffodil Sky"], ["artist", "Sex Pistols"], ["duration", "32.76"], ["image", "https://robohash.org/etesseea.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:21:27.886107"], ["updated_at", "2022-01-27 19:21:27.886107"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 12:21:38 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 719)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:21:40 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 709)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-01-27 12:21:44 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"123", "password"=>"[FILTERED]", "user"=>{"username"=>"123"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "123"], ["password_digest", "$2a$12$WgTdHuQVbBgnUQTsj0q7Qeiqq9IW7yvDTArsL15hTzjNqfYVuBfDa"], ["created_at", "2022-01-27 19:21:45.055035"], ["updated_at", "2022-01-27 19:21:45.055035"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 201 Created in 209ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 2906)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:21:45 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1539)
+
+
+Started GET "/users" for ::1 at 2022-01-27 12:21:56 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1344)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:22:14 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 678)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:22:26 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Abc", "artist"=>"Gallina Pintadita", "duration"=>124, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/f2dc1cb54e8d76825832d20da860e82f/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Abc", "artist"=>"Gallina Pintadita", "duration"=>124, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/f2dc1cb54e8d76825832d20da860e82f/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Abc"], ["artist", "Gallina Pintadita"], ["duration", "124"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/f2dc1cb54e8d76825832d20da860e82f/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:22:26.166764"], ["updated_at", "2022-01-27 19:22:26.166764"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 2509)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:22:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Abc", "artist"=>"Jazz Chat Louis Comptines", "duration"=>57, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/75548e52b3a86b3034314e1bd9eee186/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Abc", "artist"=>"Jazz Chat Louis Comptines", "duration"=>57, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/75548e52b3a86b3034314e1bd9eee186/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Abc"], ["artist", "Jazz Chat Louis Comptines"], ["duration", "57"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/75548e52b3a86b3034314e1bd9eee186/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:22:28.279510"], ["updated_at", "2022-01-27 19:22:28.279510"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 2519)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:22:30 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1801)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:22:38 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.2ms | Allocations: 686)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:22:56 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1796)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:22:57 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 686)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:22:57 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1796)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:22:58 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 690)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 12:22:59 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 593)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-27 12:23:31 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"123", "password"=>"[FILTERED]", "session"=>{"username"=>"123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 197ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 804)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:23:31 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 672)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:23:56 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1782)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:23:59 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 682)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:24:05 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1792)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:24:06 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 686)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:24:06 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1796)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:24:08 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 688)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/playlists" for ::1 at 2022-01-27 12:25:10 -0700
+Processing by PlaylistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1265)
+
+
+Started GET "/playlists" for ::1 at 2022-01-27 12:25:12 -0700
+Processing by PlaylistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1252)
+
+
+Started GET "/playlists" for ::1 at 2022-01-27 12:25:15 -0700
+Processing by PlaylistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.04ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1270)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Such, Such Were the Joys"], ["artist", "Sinead O'connor"], ["duration", "82.89"], ["image", "https://robohash.org/nobissintperferendis.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:25:24.710597"], ["updated_at", "2022-01-27 19:25:24.710597"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Fear and Trembling"], ["artist", "Ryan Adams"], ["duration", "26.24"], ["image", "https://robohash.org/velitdoloremfacere.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:25:24.713838"], ["updated_at", "2022-01-27 19:25:24.713838"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/users" for ::1 at 2022-01-27 12:25:34 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1354)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Mr Standfast"], ["artist", "Queen"], ["duration", "96.61"], ["image", "https://robohash.org/maximeenimet.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:25:43.209947"], ["updated_at", "2022-01-27 19:25:43.209947"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "The Far-Distant Oxus"], ["artist", "The Pretenders"], ["duration", "41.75"], ["image", "https://robohash.org/inoccaecatiaut.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:25:43.213559"], ["updated_at", "2022-01-27 19:25:43.213559"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 93], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "A Handful of Dust"], ["artist", "Sex Pistols"], ["duration", "53.61"], ["image", "https://robohash.org/quiaverovoluptatibus.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:25:55.855711"], ["updated_at", "2022-01-27 19:25:55.855711"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Those Barren Leaves, Thrones, Dominations"], ["artist", "Siouxsie and The Banshees"], ["duration", "68.36"], ["image", "https://robohash.org/repellendustemporeaccusantium.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:25:55.859560"], ["updated_at", "2022-01-27 19:25:55.859560"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/songs" for ::1 at 2022-01-27 12:26:02 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.92ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 2587)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "This Side of Paradise"], ["artist", "Duke Ellington"], ["duration", "22.93"], ["image", "https://robohash.org/rerumerrorfuga.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:26:17.649139"], ["updated_at", "2022-01-27 19:26:17.649139"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "A Passage to India"], ["artist", "Neil Young"], ["duration", "33.92"], ["image", "https://robohash.org/natusetnecessitatibus.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:26:17.652393"], ["updated_at", "2022-01-27 19:26:17.652393"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 227], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "duration", "image", "song_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "test"], ["duration", "test"], ["image", "test"], ["song_id", 227], ["user_id", 3], ["created_at", "2022-01-27 19:26:17.674858"], ["updated_at", "2022-01-27 19:26:17.674858"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/playlists" for ::1 at 2022-01-27 12:26:21 -0700
+Processing by PlaylistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 227], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.88ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 3287)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.7ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Time of our Darkness"], ["artist", "Ozzy Osbourne"], ["duration", "11.32"], ["image", "https://robohash.org/magniteneturvoluptatem.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:27:53.078155"], ["updated_at", "2022-01-27 19:27:53.078155"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "As I Lay Dying"], ["artist", "Grace Jones"], ["duration", "78.07"], ["image", "https://robohash.org/praesentiumquaeullam.png?size=300x300&set=set1"], ["created_at", "2022-01-27 19:27:53.081965"], ["updated_at", "2022-01-27 19:27:53.081965"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 226], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlaylist Create (0.3ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "duration", "image", "song_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "test"], ["duration", "test"], ["image", "test"], ["song_id", 226], ["user_id", 3], ["created_at", "2022-01-27 19:27:53.105454"], ["updated_at", "2022-01-27 19:27:53.105454"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/playlists" for ::1 at 2022-01-27 12:27:55 -0700
+Processing by PlaylistsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 227], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers]   [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 226], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:10:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.83ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms | Allocations: 5324)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:28:17 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.4ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 3132)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:28:23 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 674)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:28:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:28:28.222924"], ["updated_at", "2022-01-27 19:28:28.222924"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 2505)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:28:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:28:28.403710"], ["updated_at", "2022-01-27 19:28:28.403710"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 2513)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:28:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:28:28.552242"], ["updated_at", "2022-01-27 19:28:28.552242"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 201 Created in 4ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 2512)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:28:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:28:28.687950"], ["updated_at", "2022-01-27 19:28:28.687950"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 2512)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:28:28 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:28:28.838459"], ["updated_at", "2022-01-27 19:28:28.838459"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 2514)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:28:29 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 3788)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:43:01 -0700
+Processing by SongsController#index as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.8ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 4263)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:43:03 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:43:04 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:43:05 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 778)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:43:05 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.93ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 3791)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:43:07 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:44:45 -0700
+Processing by UsersController#show as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 0.9ms | Allocations: 5390)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:44:45 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.87ms)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.8ms | Allocations: 8104)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:44:45 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:44:46 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:44:47 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 782)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:44:47 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.63ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3784)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:44:48 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:44:48 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.14ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 3779)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:44:52 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 777)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:44:52 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.62ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 3779)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:44:58 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:45:00 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:45:11 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:45:12 -0700
+Processing by UsersController#show as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 0.9ms | Allocations: 5346)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:45:12 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.7ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.8ms | Allocations: 8102)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:45:37 -0700
+Processing by UsersController#show as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.8ms | Allocations: 5345)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:45:37 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.62ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 8100)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:45:38 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:45:39 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 792)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:45:39 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.57ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 3781)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:45:41 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 680)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:45:41 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.63ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3778)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:46:06 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:46:08 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 784)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:46:08 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.6ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 3773)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:34 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:35 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:35 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:38 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:47:39 -0700
+Processing by UsersController#show as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.0ms | Allocations: 5344)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:47:39 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.75ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.7ms | Allocations: 8092)
+
+
+Started GET "/songs" for ::1 at 2022-01-27 12:47:48 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.91ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 3761)
+
+
+Started GET "/songs" for ::1 at 2022-01-27 12:47:52 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.72ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3768)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:56 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:56 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:57 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:47:57 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:48:49 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.77ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3778)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:50 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:51 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:51 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:51 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:52 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:48:53 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 792)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:48:53 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.75ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 3774)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:54 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:55 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:48:55 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:48:56 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 778)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:48:56 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.58ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3785)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:50:12 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.71ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 3783)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:51:19 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.86ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 3779)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:51:26 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:51:26 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.6ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 3770)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:51:26 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:51:27 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.91ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 3778)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:51:28 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 775)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:51:28 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.73ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 3788)
+
+
+Started DELETE "/songs" for 127.0.0.1 at 2022-01-27 12:51:29 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:51:29 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.72ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 3782)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:51:30 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 787)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:51:30 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 3769)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:53:14 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.58ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3779)
+
+
+Started DELETE "/songs/" for 127.0.0.1 at 2022-01-27 12:53:19 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:53:19 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.7ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 3784)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:53:33 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.55ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 3789)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:53:35 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 787)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:53:35 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.24ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 3779)
+
+
+Started DELETE "/songs/" for 127.0.0.1 at 2022-01-27 12:53:38 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/songs"):
+  
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:53:38 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.92ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 3778)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:04 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.59ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 3781)
+
+
+Started DELETE "/songs/222" for 127.0.0.1 at 2022-01-27 12:54:05 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"222", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 222], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 222]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 222]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 15ms (ActiveRecord: 1.7ms | Allocations: 5710)
+
+
+Started DELETE "/songs/222" for 127.0.0.1 at 2022-01-27 12:54:07 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"222", "song"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 222], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1028)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=222):
+  
+app/controllers/songs_controller.rb:32:in `find_by_id'
+app/controllers/songs_controller.rb:20:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:07 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.59ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 3648)
+
+
+Started DELETE "/songs/223" for 127.0.0.1 at 2022-01-27 12:54:09 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"223", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 223], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 223]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 223]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.5ms | Allocations: 2981)
+
+
+Started DELETE "/songs/223" for 127.0.0.1 at 2022-01-27 12:54:10 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"223", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 223], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1023)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=223):
+  
+app/controllers/songs_controller.rb:32:in `find_by_id'
+app/controllers/songs_controller.rb:20:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:10 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.43ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 3508)
+
+
+Started DELETE "/songs/224" for 127.0.0.1 at 2022-01-27 12:54:12 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"224", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 224], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 224]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 224]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms | Allocations: 2977)
+
+
+Started DELETE "/songs/224" for 127.0.0.1 at 2022-01-27 12:54:13 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"224", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 224], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1034)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=224):
+  
+app/controllers/songs_controller.rb:32:in `find_by_id'
+app/controllers/songs_controller.rb:20:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:13 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.47ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 3391)
+
+
+Started DELETE "/songs/225" for 127.0.0.1 at 2022-01-27 12:54:14 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"225", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 225], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 225]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 225]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms | Allocations: 2981)
+
+
+Started DELETE "/songs/225" for 127.0.0.1 at 2022-01-27 12:54:15 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"225", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 225], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1030)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=225):
+  
+app/controllers/songs_controller.rb:32:in `find_by_id'
+app/controllers/songs_controller.rb:20:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:15 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.38ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 3257)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:54:16 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 781)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:16 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.42ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 3255)
+
+
+Started DELETE "/songs/226" for 127.0.0.1 at 2022-01-27 12:54:17 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"226", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 226], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 226]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Destroy (0.4ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.1ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 226]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 13ms (ActiveRecord: 2.0ms | Allocations: 6642)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:54:19 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 779)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:19 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.9ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 3115)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:30 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.31ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 3123)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:54:31 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 776)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:32 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.25ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 3118)
+
+
+Started DELETE "/songs/227" for 127.0.0.1 at 2022-01-27 12:54:33 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"227", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 227], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 227]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Destroy (0.4ms)[0m  [1m[31mDELETE FROM "playlists" WHERE "playlists"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.1ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 227]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.7ms | Allocations: 3636)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:54:34 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 783)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:34 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.4ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 2987)
+
+
+Started DELETE "/songs/228" for 127.0.0.1 at 2022-01-27 12:54:38 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"228", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 228], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 228]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 228]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.5ms | Allocations: 2977)
+
+
+Started DELETE "/songs/229" for 127.0.0.1 at 2022-01-27 12:54:39 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"229", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 229], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 229]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 229]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.7ms | Allocations: 2981)
+
+
+Started DELETE "/songs/230" for 127.0.0.1 at 2022-01-27 12:54:42 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"230", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 230], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 230]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 230]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.6ms | Allocations: 2973)
+
+
+Started DELETE "/songs/231" for 127.0.0.1 at 2022-01-27 12:54:44 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"231", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 231], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 231]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 231]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 1.4ms | Allocations: 2979)
+
+
+Started DELETE "/songs/232" for 127.0.0.1 at 2022-01-27 12:54:45 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"232", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 232], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 232]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 232]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 1.5ms | Allocations: 2981)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:54:46 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.17ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 779)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:54:46 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.95ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 2322)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:06 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 2313)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:55:07 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 781)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:07 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.05ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 2319)
+
+
+Started DELETE "/songs/233" for 127.0.0.1 at 2022-01-27 12:55:09 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"233", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 233], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 233]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 233]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:09 -0700
+Completed 204 No Content in 7ms (ActiveRecord: 1.5ms | Allocations: 3359)
+
+
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.84ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 2175)
+
+
+Started DELETE "/songs/234" for 127.0.0.1 at 2022-01-27 12:55:09 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"234", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 234], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 234]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 234]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:09 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms | Allocations: 3813)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 2825)
+
+
+Started DELETE "/songs/235" for 127.0.0.1 at 2022-01-27 12:55:10 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"235", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 235], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 235]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:10 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 235]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 9ms (ActiveRecord: 1.7ms | Allocations: 4347)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.6ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2587)
+
+
+Started DELETE "/songs/236" for 127.0.0.1 at 2022-01-27 12:55:11 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"236", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 236], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 236]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 236]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:11 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms | Allocations: 3814)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 2111)
+
+
+Started DELETE "/songs/237" for 127.0.0.1 at 2022-01-27 12:55:11 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"237", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 237], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 237]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 237]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:11 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms | Allocations: 3786)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1958)
+
+
+Started DELETE "/songs/238" for 127.0.0.1 at 2022-01-27 12:55:12 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"238", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 238], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 238]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:12 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 238]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 9ms (ActiveRecord: 1.6ms | Allocations: 4274)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 2190)
+
+
+Started DELETE "/songs/239" for 127.0.0.1 at 2022-01-27 12:55:12 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"239", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 239], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:12 -0700
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 239]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Processing by SongsController#index as */*
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 239]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+Completed 204 No Content in 10ms (ActiveRecord: 1.5ms | Allocations: 4707)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 2419)
+
+
+Started DELETE "/songs/240" for 127.0.0.1 at 2022-01-27 12:55:12 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"240", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 240], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 240]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:12 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.4ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 240]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 9ms (ActiveRecord: 1.6ms | Allocations: 4264)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.04ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1934)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:55:15 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 676)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:55:19 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Hey Nabina", "artist"=>"Rupankar", "duration"=>224, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/78f478fc85a4a6f9d7a399d3e70ea9d5/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Hey Nabina", "artist"=>"Rupankar", "duration"=>224, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/78f478fc85a4a6f9d7a399d3e70ea9d5/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Hey Nabina"], ["artist", "Rupankar"], ["duration", "224"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/78f478fc85a4a6f9d7a399d3e70ea9d5/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:55:19.965597"], ["updated_at", "2022-01-27 19:55:19.965597"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 2602)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:55:21 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Hey", "artist"=>"Jul", "duration"=>193, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/d70dbea33c760ed8b7fdf77b90986e1f/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Hey", "artist"=>"Jul", "duration"=>193, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/d70dbea33c760ed8b7fdf77b90986e1f/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Hey"], ["artist", "Jul"], ["duration", "193"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/d70dbea33c760ed8b7fdf77b90986e1f/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:55:21.091140"], ["updated_at", "2022-01-27 19:55:21.091140"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 201 Created in 6ms (Views: 0.8ms | ActiveRecord: 1.5ms | Allocations: 2530)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:55:22 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Hey you", "artist"=>"Pony Pony Run Run", "duration"=>193, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/de9913ead924d56ec69f8334df3c48c4/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Hey you", "artist"=>"Pony Pony Run Run", "duration"=>193, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/de9913ead924d56ec69f8334df3c48c4/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Hey you"], ["artist", "Pony Pony Run Run"], ["duration", "193"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/de9913ead924d56ec69f8334df3c48c4/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:55:22.529945"], ["updated_at", "2022-01-27 19:55:22.529945"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 2518)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:55:24 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Hey Good Lookin'", "artist"=>"Hank Williams", "duration"=>173, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/67aaee6a1148adccd37934d98331b4b8/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Hey Good Lookin'", "artist"=>"Hank Williams", "duration"=>173, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/67aaee6a1148adccd37934d98331b4b8/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Hey Good Lookin'"], ["artist", "Hank Williams"], ["duration", "173"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/67aaee6a1148adccd37934d98331b4b8/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:55:24.284676"], ["updated_at", "2022-01-27 19:55:24.284676"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 2512)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:55:25 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Hey Joe", "artist"=>"Jimi Hendrix", "duration"=>210, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/b83888148da4c3978b9c3870d8cb3166/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Hey Joe", "artist"=>"Jimi Hendrix", "duration"=>210, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/b83888148da4c3978b9c3870d8cb3166/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Hey Joe"], ["artist", "Jimi Hendrix"], ["duration", "210"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/b83888148da4c3978b9c3870d8cb3166/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:55:25.366020"], ["updated_at", "2022-01-27 19:55:25.366020"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 2518)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:27 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1913)
+
+
+Started DELETE "/songs/241" for 127.0.0.1 at 2022-01-27 12:55:31 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"241", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 241], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 241]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 241]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:31 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 204 No Content in 7ms (ActiveRecord: 1.5ms | Allocations: 3806)
+
+
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.48ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 2098)
+
+
+Started DELETE "/songs/244" for 127.0.0.1 at 2022-01-27 12:55:32 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"244", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 244], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 244]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:32 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 244]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 9ms (ActiveRecord: 1.6ms | Allocations: 4301)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 2330)
+
+
+Started DELETE "/songs/242" for 127.0.0.1 at 2022-01-27 12:55:34 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"242", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 242], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 242]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:34 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 242]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 9ms (ActiveRecord: 1.6ms | Allocations: 4274)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 2192)
+
+
+Started DELETE "/songs/243" for 127.0.0.1 at 2022-01-27 12:55:35 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"243", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 243], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:35 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 243]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 243]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 204 No Content in 9ms (ActiveRecord: 1.4ms | Allocations: 4997)
+
+
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 2396)
+
+
+Started DELETE "/songs/245" for 127.0.0.1 at 2022-01-27 12:55:36 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"245", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:36 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 245]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 245]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 204 No Content in 9ms (ActiveRecord: 1.4ms | Allocations: 4785)
+
+
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2258)
+
+
+Started DELETE "/songs/245" for 127.0.0.1 at 2022-01-27 12:55:37 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"245", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 245], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1101)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:37 -0700
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=245):
+  
+app/controllers/songs_controller.rb:32:in `find_by_id'
+app/controllers/songs_controller.rb:20:in `destroy'
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.04ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:55:39 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 782)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:55:39 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1266)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:56:23 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.04ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1262)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:56:24 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 696)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:56:31 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:56:31.308578"], ["updated_at", "2022-01-27 19:56:31.308578"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 201 Created in 6ms (Views: 0.8ms | ActiveRecord: 1.7ms | Allocations: 2527)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:56:32 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Vertigo", "artist"=>"Jay-Jay Johanson", "duration"=>269, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/42d56540c0903725588f60e8aefb54a8/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Vertigo", "artist"=>"Jay-Jay Johanson", "duration"=>269, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/42d56540c0903725588f60e8aefb54a8/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Vertigo"], ["artist", "Jay-Jay Johanson"], ["duration", "269"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/42d56540c0903725588f60e8aefb54a8/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:56:32.884521"], ["updated_at", "2022-01-27 19:56:32.884521"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 2510)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:56:34 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Test Me", "artist"=>"Melanie Martinez", "duration"=>174, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/d88c877f5ffc7f3e8bbfa89f3fa78439/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Test Me", "artist"=>"Melanie Martinez", "duration"=>174, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/d88c877f5ffc7f3e8bbfa89f3fa78439/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Test Me"], ["artist", "Melanie Martinez"], ["duration", "174"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/d88c877f5ffc7f3e8bbfa89f3fa78439/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 19:56:34.489635"], ["updated_at", "2022-01-27 19:56:34.489635"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 2520)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:56:37 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1648)
+
+
+Started DELETE "/songs/246" for 127.0.0.1 at 2022-01-27 12:56:39 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"246", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 246], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 246]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:56:39 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 246]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 9ms (ActiveRecord: 1.6ms | Allocations: 4274)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 2191)
+
+
+Started DELETE "/songs/247" for 127.0.0.1 at 2022-01-27 12:56:40 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"247", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 247], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 247]]
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:56:40 -0700
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 247]]
+Processing by SongsController#index as */*
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Completed 204 No Content in 8ms (ActiveRecord: 1.5ms | Allocations: 4275)
+
+
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 2065)
+
+
+Started DELETE "/songs/248" for 127.0.0.1 at 2022-01-27 12:56:41 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"248", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:56:41 -0700
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 248], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Processing by SongsController#index as */*
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mPlaylist Load (0.1ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."song_id" = ?[0m  [["song_id", 248]]
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+  [1m[36mSong Destroy (0.3ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = ?[0m  [["id", 248]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2842)
+
+
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:21:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 1.4ms | Allocations: 5118)
+
+
+Started DELETE "/songs/248" for 127.0.0.1 at 2022-01-27 12:56:43 -0700
+Processing by SongsController#destroy as */*
+  Parameters: {"id"=>"248", "song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 248], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:32:in `find_by_id'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1186)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=248):
+  
+app/controllers/songs_controller.rb:32:in `find_by_id'
+app/controllers/songs_controller.rb:20:in `destroy'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:56:43 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.04ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1259)
+
+

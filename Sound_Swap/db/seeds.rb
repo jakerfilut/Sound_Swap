@@ -10,7 +10,7 @@ require 'faker'
 puts "🍕 Seeding data..."
 
 
-100.times do
+2.times do
   Song.create!(
     title: Faker::Book.title,
     artist: Faker::Music.band,
@@ -23,8 +23,8 @@ Playlist.create!(
   title: "test",
   duration: "test",
   image: "test",
-  user_id: 1,
-  song_id: rand(1..100)
+  user_id: 3,
+  song_id: rand(225..228),
 )
 
 
