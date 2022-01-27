@@ -47,7 +47,17 @@ function Login({ onLogin }) {
 const Logo = styled.h1`
   font-size: 3rem;
   margin: 8px 0 16px;
-
+  background: #98c1d9;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  color: #293241;
+  font-weight: 400;
 `;
 
 const Divider = styled.hr`

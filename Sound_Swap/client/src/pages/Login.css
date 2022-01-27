@@ -1,19 +1,4 @@
 
-h1 {
-    background: #98c1d9;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    color: #293241;
-    font-weight: 400;
-
-  }
-
 section {
     margin: 40px auto;
     padding: 16px;
