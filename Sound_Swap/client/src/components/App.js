@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Login from "../pages/Login";
 import Search from "../pages/Search";
+import { MdRouter } from "react-icons/md";
 // import NewPlaylist from "../pages/Search";
 
 function App() {

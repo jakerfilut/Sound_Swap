@@ -3,20 +3,26 @@ import styled from "styled-components";
 import LoginForm from "../components/LoginForm";
 import SignUpForm from "../components/SignUpForm";
 import { Button } from "../styles";
+import "../pages/Login.css";
+import { MdOutlineLibraryMusic } from "react-icons/md";
+import { IconContext } from "react-icons/lib";
 
 function Login({ onLogin }) {
   const [showLogin, setShowLogin] = useState(true);
 
   return (
-    <Wrapper>
-      <Logo>SoundSwap</Logo>
+    <IconContext.Provider value={{ color: "#EE6C4D", size: 40 }}> 
+    <section>
+      <Logo>   <MdOutlineLibraryMusic />SoundSwap</Logo>
+   
+      <p>SoundSwap allows users to curate playlists to share with friends—no matter their preferred streaming service. Log in or sign up to start swapping sounds!</p>
       {showLogin ? (
         <>
           <LoginForm onLogin={onLogin} />
           <Divider />
           <p>
             Don't have an account? &nbsp;
-            <Button color="secondary" onClick={() => setShowLogin(false)}>
+            <Button color="secondary"  onClick={() => setShowLogin(false)}>
               Sign Up
             </Button>
           </p>
@@ -27,27 +33,21 @@ function Login({ onLogin }) {
           <Divider />
           <p>
             Already have an account? &nbsp;
-            <Button color="secondary" onClick={() => setShowLogin(true)}>
+            <Button color="secondary"  onClick={() => setShowLogin(true)}>
               Log In
             </Button>
           </p>
         </>
       )}
-    </Wrapper>
+    </section>
+    </IconContext.Provider>
   );
 }
 
 const Logo = styled.h1`
-  font-family: "Permanent Marker", cursive;
   font-size: 3rem;
-  color: deeppink;
   margin: 8px 0 16px;
-`;
 
-const Wrapper = styled.section`
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 16px;
 `;
 
 const Divider = styled.hr`
