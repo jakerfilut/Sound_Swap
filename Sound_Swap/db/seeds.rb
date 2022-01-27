@@ -9,6 +9,7 @@ require 'faker'
 
 puts "🍕 Seeding data..."
 
+<<<<<<< HEAD
 Song.delete_all
 Playlist.delete_all
 
@@ -30,5 +31,13 @@ Playlist.create!(
 )
 
 
+
+  Song.create(
+    title: "bob",
+    artist: "bob",
+    duration: "bob",
+    image: "bob",
+    user_id: 1
+  )
 
   puts "🍕 Done seeding!"
