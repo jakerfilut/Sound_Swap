@@ -7,16 +7,26 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-
 puts "🍕 Seeding data..."
 
- 100.times do
-    Song.create(
-      title: Faker::Book.title,
-      artist: Faker::Music.band,
-      duration: Faker::Number.decimal(l_digits: 2),
-      image: Faker::Avatar.image,
-    )
-  end
+
+100.times do
+  Song.create!(
+    title: Faker::Book.title,
+    artist: Faker::Music.band,
+    duration: Faker::Number.decimal(l_digits: 2),
+    image: Faker::Avatar.image,
+  )
+end
+
+Playlist.create!(
+  title: "test",
+  duration: "test",
+  image: "test",
+  user_id: 1,
+  song_id: rand(1..100)
+)
+
+
 
   puts "🍕 Done seeding!"

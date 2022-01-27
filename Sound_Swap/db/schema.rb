@@ -14,10 +14,14 @@ ActiveRecord::Schema.define(version: 2022_01_26_204945) do
 
   create_table "playlists", force: :cascade do |t|
     t.string "title"
-    t.string "duration"
+    t.string "duration", default: "0"
     t.string "image"
+    t.integer "song_id", null: false
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["song_id"], name: "index_playlists_on_song_id"
+    t.index ["user_id"], name: "index_playlists_on_user_id"
   end
 
   create_table "songs", force: :cascade do |t|
@@ -25,12 +29,8 @@ ActiveRecord::Schema.define(version: 2022_01_26_204945) do
     t.string "artist"
     t.string "duration"
     t.string "image"
-    t.integer "playlist_id", null: false
-    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["playlist_id"], name: "index_songs_on_playlist_id"
-    t.index ["user_id"], name: "index_songs_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,6 +40,6 @@ ActiveRecord::Schema.define(version: 2022_01_26_204945) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "songs", "playlists"
-  add_foreign_key "songs", "users"
+  add_foreign_key "playlists", "songs"
+  add_foreign_key "playlists", "users"
 end
