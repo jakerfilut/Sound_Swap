@@ -11970,3 +11970,147 @@ Processing by SongsController#index as */*
 Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.6ms | Allocations: 30814)
 
 
+Started GET "/me" for 127.0.0.1 at 2022-01-27 12:16:36 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 779)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:16:36 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (19.71ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.7ms | Allocations: 30815)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:16:37 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 678)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:16:38 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.96ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.6ms | Allocations: 30811)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:16:38 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 684)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 12:16:39 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 587)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-27 12:16:44 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"123", "password"=>"[FILTERED]", "session"=>{"username"=>"123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.16ms)
+Completed 200 OK in 187ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 801)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:16:44 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.2ms | Allocations: 676)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:16:45 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.46ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.5ms | Allocations: 30808)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:16:46 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 676)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 12:16:46 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (18.85ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.5ms | Allocations: 30808)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 12:16:47 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 680)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
