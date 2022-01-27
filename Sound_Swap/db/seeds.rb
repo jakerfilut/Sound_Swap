@@ -16,7 +16,16 @@ puts "🍕 Seeding data..."
       artist: Faker::Music.band,
       duration: Faker::Number.decimal(l_digits: 2),
       image: Faker::Avatar.image,
+      user_id: 1
     )
   end
+
+  Song.create(
+    title: "bob",
+    artist: "bob",
+    duration: "bob",
+    image: "bob",
+    user_id: 1
+  )
 
   puts "🍕 Done seeding!"

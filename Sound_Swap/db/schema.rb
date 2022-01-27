@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2022_01_26_204945) do
 
   create_table "playlists", force: :cascade do |t|
     t.string "title"
-    t.string "duration"
+    t.string "duration", default: "0"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
