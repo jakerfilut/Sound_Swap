@@ -8,3 +8,11 @@ p {
     color: #3D5A80;
     text-align: center; 
 }
+
+form {
+    margin-left: 40%; 
+}
+
+#search {
+    margin-left: 0%
+}

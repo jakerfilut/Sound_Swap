@@ -18,7 +18,7 @@ function Login({ onLogin }) {
       <p>SoundSwap allows users to curate playlists to share with friends—no matter their preferred streaming service. Log in or sign up to start swapping sounds!</p>
       {showLogin ? (
         <>
-          <LoginForm onLogin={onLogin} />
+          <LoginForm className="userForm" onLogin={onLogin} />
           <Divider />
           <p>
             Don't have an account? &nbsp;
@@ -29,7 +29,7 @@ function Login({ onLogin }) {
         </>
       ) : (
         <>
-          <SignUpForm onLogin={onLogin} />
+          <SignUpForm className="userForm" onLogin={onLogin} />
           <Divider />
           <p>
             Already have an account? &nbsp;
