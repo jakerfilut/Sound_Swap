@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-// import { Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Login from "../pages/Login";
 import Search from "../pages/Search";
+import Playlist from "../pages/Playlist";
 import { MdRouter } from "react-icons/md";
-// import NewPlaylist from "../pages/Search";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -19,13 +19,14 @@ function App() {
   }, []);
 
   if (!user) return <Login onLogin={setUser} />;
-
+  //test
   return (
     <>
       <NavBar user={user} setUser={setUser} />
-      <main>
-        <Search user={user} />
-      </main>
+      <Switch>
+        <Route path="/search" component={() => <Search />} />
+        <Route path="/playlist" component={() => <Playlist />} />
+      </Switch>
     </>
   );
 }
