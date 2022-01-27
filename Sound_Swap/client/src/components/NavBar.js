@@ -33,20 +33,28 @@ function NavBar({ user, setUser }) {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <div className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/search"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 <div className="nav-plus">
                   <SiAddthis size={24} />
                 </div>
                 Playlist
-              </div>
+              </Link>
             </li>
             <li className="nav-item">
-              <div className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/playlist"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 <div className="nav-plus">
                   <BsPersonSquare size={24} />
                 </div>
                 Profile
-              </div>
+              </Link>
             </li>
 
             <li className="nav-item">

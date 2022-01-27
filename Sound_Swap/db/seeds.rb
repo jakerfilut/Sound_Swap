@@ -9,8 +9,10 @@ require 'faker'
 
 puts "🍕 Seeding data..."
 
+Song.delete_all
+Playlist.delete_all
 
-100.times do
+2.times do
   Song.create!(
     title: Faker::Book.title,
     artist: Faker::Music.band,

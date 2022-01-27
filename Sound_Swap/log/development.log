@@ -11362,3 +11362,298 @@ FOREIGN KEY ("user_id")
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mPlaylist Create (0.2ms)[0m  [1m[32mINSERT INTO "playlists" ("title", "duration", "image", "song_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "test"], ["duration", "test"], ["image", "test"], ["song_id", 3], ["user_id", 1], ["created_at", "2022-01-27 16:34:11.111275"], ["updated_at", "2022-01-27 16:34:11.111275"]]
   [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (2.7ms)[0m  [1m[31mDELETE FROM "songs";
+DELETE FROM "users";
+DELETE FROM "playlists"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mSong Destroy (0.1ms)[0m  [1m[31mDELETE FROM "songs"[0m
+  [1m[36mPlaylist Destroy (0.1ms)[0m  [1m[31mDELETE FROM "playlists"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "All the King's Men"], ["artist", "The Birthday Party"], ["duration", "69.03"], ["image", "https://robohash.org/essequisoptio.png?size=300x300&set=set1"], ["created_at", "2022-01-27 17:10:58.521823"], ["updated_at", "2022-01-27 17:10:58.521823"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Look Homeward, Angel"], ["artist", "Nigel Kennedy"], ["duration", "44.06"], ["image", "https://robohash.org/molestiaeutducimus.png?size=300x300&set=set1"], ["created_at", "2022-01-27 17:10:58.525287"], ["updated_at", "2022-01-27 17:10:58.525287"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT ?[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/songs" for ::1 at 2022-01-27 10:11:28 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 12ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 4201)
+
+
+Started GET "/songs" for ::1 at 2022-01-27 10:11:29 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 733)
+
+
+Started GET "/song" for ::1 at 2022-01-27 10:11:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/song"):
+  
+Started GET "/song/1" for ::1 at 2022-01-27 10:11:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/song/1"):
+  
+Started GET "/songs" for ::1 at 2022-01-27 10:11:41 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 849)
+
+
+Started GET "/songs" for ::1 at 2022-01-27 10:11:41 -0700
+Processing by SongsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.04ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 701)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 10:11:48 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 740)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 10:11:49 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 719)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 10:11:50 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 736)
+
+
+Started GET "/me" for 127.0.0.1 at 2022-01-27 10:11:51 -0700
+Processing by UsersController#show as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 759)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-01-27 10:11:55 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"123", "password"=>"[FILTERED]", "user"=>{"username"=>"123"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "123"], ["password_digest", "$2a$12$2SxE/aDtzS24ieL0kCyx.uWOI0HiPuMq0bklgAJq8P6vs1B4w6yWu"], ["created_at", "2022-01-27 17:11:55.646398"], ["updated_at", "2022-01-27 17:11:55.646398"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 201 Created in 203ms (Views: 5.9ms | ActiveRecord: 1.6ms | Allocations: 6946)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 10:11:55 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.8ms | Allocations: 6112)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 10:12:00 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 698)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 10:12:06 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Intro", "artist"=>"SEB", "duration"=>104, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Intro"], ["artist", "SEB"], ["duration", "104"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/e2701d7d6a40b9b4cabc1a49f8cad14e/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 17:12:06.256441"], ["updated_at", "2022-01-27 17:12:06.256441"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 2630)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 10:12:07 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Vertigo", "artist"=>"Jay-Jay Johanson", "duration"=>269, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/42d56540c0903725588f60e8aefb54a8/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Vertigo", "artist"=>"Jay-Jay Johanson", "duration"=>269, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/42d56540c0903725588f60e8aefb54a8/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Vertigo"], ["artist", "Jay-Jay Johanson"], ["duration", "269"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/42d56540c0903725588f60e8aefb54a8/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 17:12:07.752864"], ["updated_at", "2022-01-27 17:12:07.752864"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 201 Created in 7ms (Views: 0.7ms | ActiveRecord: 1.7ms | Allocations: 2515)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 10:12:09 -0700
+Processing by SongsController#create as */*
+  Parameters: {"title"=>"Test Me", "artist"=>"Melanie Martinez", "duration"=>174, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/d88c877f5ffc7f3e8bbfa89f3fa78439/250x250-000000-80-0-0.jpg", "song"=>{"title"=>"Test Me", "artist"=>"Melanie Martinez", "duration"=>174, "image"=>"https://e-cdns-images.dzcdn.net/images/cover/d88c877f5ffc7f3e8bbfa89f3fa78439/250x250-000000-80-0-0.jpg"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "duration", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Test Me"], ["artist", "Melanie Martinez"], ["duration", "174"], ["image", "https://e-cdns-images.dzcdn.net/images/cover/d88c877f5ffc7f3e8bbfa89f3fa78439/250x250-000000-80-0-0.jpg"], ["created_at", "2022-01-27 17:12:09.126084"], ["updated_at", "2022-01-27 17:12:09.126084"]]
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:15:in `create'
+[active_model_serializers] Rendered SongSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 2514)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 10:12:10 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1917)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2022-01-27 10:12:17 -0700
+Processing by SessionsController#destroy as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 591)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-27 10:12:21 -0700
+Processing by SessionsController#create as */*
+  Parameters: {"username"=>"1234", "password"=>"[FILTERED]", "session"=>{"username"=>"1234", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "1234"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 686)
+
+
+Started POST "/signup" for 127.0.0.1 at 2022-01-27 10:12:25 -0700
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"1234", "password"=>"[FILTERED]", "user"=>{"username"=>"1234"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "1234"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "1234"], ["password_digest", "$2a$12$UBlR5pd.63toAiTrTNYGK.NvYsRq5qPulNuFfPhdRtqDno1YlkPCG"], ["created_at", "2022-01-27 17:12:25.424620"], ["updated_at", "2022-01-27 17:12:25.424620"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 201 Created in 197ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 2841)
+
+
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 10:12:25 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.58ms)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1913)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 10:12:30 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 690)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
+Started GET "/songs" for 127.0.0.1 at 2022-01-27 10:12:31 -0700
+Processing by SongsController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1930)
+
+
+Started POST "/songs" for 127.0.0.1 at 2022-01-27 10:12:31 -0700
+Processing by SongsController#create as */*
+  Parameters: {"song"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `authorize'
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.1ms | Allocations: 678)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: song
+Did you mean?  song
+               controller
+               action):
+  
+app/controllers/songs_controller.rb:27:in `song_params'
+app/controllers/songs_controller.rb:15:in `create'
