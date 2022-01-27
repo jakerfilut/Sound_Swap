@@ -59,7 +59,7 @@ function NavBar({ user, setUser }) {
 
             <li className="nav-item">
               <div className="nav-links" onClick={closeMobileMenu}>
-                <button onClick={handleLogoutClick}>Logout</button>
+                <button id="logout" onClick={handleLogoutClick}>Logout</button>
               </div>
             </li>
           </ul>
