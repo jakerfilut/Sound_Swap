@@ -8,23 +8,24 @@ function Playlist() {
     fetch("/songs")
       .then((res) => res.json())
       .then((songData) => setSongs(songData));
+    console.log("updated song");
   }, [updateSong]);
 
   function handleDelete(song) {
-    // console.log(song.id);
     fetch(`/songs/${song.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
     });
+    console.log("delete song");
     setUpdateSong(!updateSong);
   }
 
   const mapSongs = songs.map((song) => {
     return (
       <div className="song_container_card">
-        <h1>{song.title}</h1>
+        <h1 className="song_title">{song.title}</h1>
         <img src={song.image} />
         <div>{song.artist}</div>
         <div>{song.duration}</div>
@@ -33,7 +34,12 @@ function Playlist() {
     );
   });
 
-  return <div>{mapSongs}</div>;
+  return (
+    <div className="song_container">
+      {mapSongs}
+      {/* <button>Create Playlist</button> */}
+    </div>
+  );
 }
 
 export default Playlist;

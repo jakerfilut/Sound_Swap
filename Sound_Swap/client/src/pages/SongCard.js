@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./SongCard.css";
 
 function SongCard({ results }) {
   const [newSong, setNewSong] = useState({});
@@ -47,7 +48,7 @@ function SongCard({ results }) {
   const mapResults = results.map((song) => {
     return (
       <div className="song_container_card">
-        <h1>{song.title}</h1>
+        <h1 className="song_title">{song.title}</h1>
         <img src={song.album.cover_medium} />
         <div>{song.artist.name}</div>
         <div>{convertHMS(song.duration)}</div>
@@ -56,7 +57,7 @@ function SongCard({ results }) {
     );
   });
 
-  return <div>{mapResults}</div>;
+  return <div className="song_container">{mapResults}</div>;
 }
 
 export default SongCard;
