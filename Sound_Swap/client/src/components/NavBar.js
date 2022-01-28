@@ -38,6 +38,15 @@ function NavBar({ user, setUser }) {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
+                Music Library
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/playlist"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 <div className="nav-plus">
                   <SiAddthis size={24} />
                 </div>
@@ -46,7 +55,7 @@ function NavBar({ user, setUser }) {
             </li>
             <li className="nav-item">
               <Link
-                to="/playlist"
+                to="/myplaylist"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

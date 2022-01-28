@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SongCard from "./SongCard";
+import "./Search.css";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
@@ -28,11 +29,11 @@ const SearchBar = () => {
   };
 
   return (
-    <form id="search" onSubmit={handleSearch}>
+    <form className="search_menu" id="search" onSubmit={handleSearch}>
       <input
         type="text"
         id="search"
-        placeholder="Search"
+        placeholder="Search..."
         name="s"
         onChange={handleChange}
       />

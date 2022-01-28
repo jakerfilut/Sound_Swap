@@ -53,10 +53,54 @@ function Playlist() {
     );
   });
 
+  const [update, setUpdate] = useState("");
+  const [title, setTitle] = useState("");
+  const [playlist, setPlaylist] = useState({});
+
+  const handleChange = (e) => {
+    setTitle(e.target.value);
+  };
+
+  function handlePlaylist(e) {
+    e.preventDefault();
+    console.log("test");
+  }
+
+  useEffect(() => {
+    fetch("/playlist", {
+      method: "create",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(playlist),
+    });
+  }, [update]);
+
+  function handleClick() {
+    setPlaylist({
+      title: "test",
+      duration: "5.00",
+      image: "test",
+      song: { songs },
+    });
+    setUpdate(!update);
+  }
+
   return (
     <div className="song_container">
       {mapSongs}
-      {/* <button>Create Playlist</button> */}
+      <form className="search_menu" id="search" onSubmit={handlePlaylist}>
+        <input
+          type="text"
+          id="Title"
+          placeholder="Playlist Title"
+          name="s"
+          onChange={handleChange}
+        />
+        <button onClick={handleClick} className="button" type="submit">
+          Create Playlist
+        </button>
+      </form>
     </div>
   );
 }

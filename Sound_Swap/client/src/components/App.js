@@ -5,6 +5,7 @@ import Login from "../pages/Login";
 import Search from "../pages/Search";
 import Playlist from "../pages/Playlist";
 import { MdRouter } from "react-icons/md";
+import UserPlaylist from "../pages/UserPlaylist";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -26,6 +27,7 @@ function App() {
       <Switch>
         <Route path="/search" component={() => <Search />} />
         <Route path="/playlist" component={() => <Playlist />} />
+        <Route path="/myplaylist" component={() => <UserPlaylist />} />
       </Switch>
     </>
   );
