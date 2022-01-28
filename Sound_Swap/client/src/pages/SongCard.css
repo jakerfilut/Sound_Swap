@@ -20,6 +20,13 @@
   font-size: 20px;
 }
 
+button {
+  background-color: #EE6C4D;
+  color: white;
+  border-radius: 4px;
+  border-color: #EE6C4D ;
+}
+
 @media screen and (max-width: 1123px) {
   .song_container {
     grid-template-columns: auto auto auto;

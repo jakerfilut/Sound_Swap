@@ -65,7 +65,7 @@ class PlaylistsController < ApplicationController
 
         def playlist_params
             # params.permit(:title, :duration, :image, :song)
-            params.require(:playlist).permit(:title, :duration, :image, :song_id, user_id)
+            params.require(:playlist).permit(:title, :duration, :image, :song_id, :user_id)
         end
 
         def render_unprocessable_entity_response(exception)

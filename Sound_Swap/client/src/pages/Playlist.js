@@ -48,7 +48,7 @@ function Playlist() {
         <img src={song.image} />
         <div>{song.artist}</div>
         <div>{convertHMS(song.duration)}</div>
-        <button onClick={() => handleDelete(song)}>Remove From Playlist</button>
+        <button className="song-buttons" onClick={() => handleDelete(song)}>Remove From Playlist</button>
       </div>
     );
   });
